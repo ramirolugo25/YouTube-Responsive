@@ -11,12 +11,18 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav main";
+    grid-template-rows: 59px;
+    grid-template-columns:240px ;
     background-color: #181818;
 }
-/*Comienza header*/
-header{
+
+/*Comienza el header*/
+.header{
+    grid-area: header;
     background-color: #212121;
     width: 100%;
     height: 59px;
@@ -24,7 +30,6 @@ header{
     justify-content: space-between;
     align-items: center;
     position:fixed;
-    border-top: 1px solid gray;
     z-index: 1;
 }
 .cabezera-izquierdo{
@@ -107,7 +112,6 @@ header{
     width: 30px;
     height: auto;
 }
-/* .cabezera-derecho config{ */
     
 .acceder{
     width: 120px;
@@ -128,11 +132,13 @@ header{
     font-family: 'Roboto', sans-serif;  
 }
 
-/*Termina header*/
+/*Termina el header*/
 
 
-/*Empieza navegador*/
-nav{
+/*Comienza el nav*/
+
+.nav{
+    grid-area: nav;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -142,9 +148,7 @@ nav{
     background-color: #212121;
     position: fixed;
     overflow-y: scroll;
-        
 }
-
 
 nav p{
     color: white;
@@ -289,18 +293,18 @@ nav p{
     font-family: 'Roboto', sans-serif;
 }
 
-/*Termina navegador*/
+/*Termina el nav*/
 
-/*Empieza main*/
+/*Comienza el main*/
 
-main{
+.main{
+    grid-area: main;
     background-color: #181818;
     width: 100%;
-    /* height: 100vh; */
-    margin-top: 59px;
-    margin-left: 245px;
+    height: 100%;
+    /* margin-top: 59px;
+    margin-left: 245px; */
     overflow-x: hidden;
-    
 }
 .contenedor-videos{
     display: grid;

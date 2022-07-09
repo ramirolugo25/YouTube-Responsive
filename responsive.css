@@ -1,0 +1,63 @@
+body{
+    grid-template-areas: 
+    "header"
+    "main";
+}
+.header{
+    justify-content: space-around;
+    
+}
+.cabezera-izquierdo >img{
+   display: none;
+}
+.buscar input{
+    display: none;
+}
+.lupa{
+    background-color: #212121;
+}
+.lupa img{
+    width: 20px;
+    height: 20px;
+}
+.microfono{
+    display: none;
+}
+.apps, .config{
+    display: none;
+}
+
+
+
+
+.nav{
+    display: none;
+}
+
+
+
+.main{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-videos{
+    grid-template-columns: 360px;
+    width: 100vw;
+    max-width: 360px;
+   min-width: 200px;
+}
+
+.video iframe{
+    width: 100vw;
+    max-width: 360px;
+}
+
+.pie-de-video{
+    width: 100vw;
+    max-width: 249.2px;
+}
