@@ -79,12 +79,12 @@ body{
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
     position:fixed;
     bottom: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     z-index: 1;
     gap: 0;
 }
@@ -94,22 +94,20 @@ body{
 .nav-r .left{
     display: flex;
     height: 100%;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
 }
 .nav-r .left img, .nav-r .right img{
     width: 30px;
 }
-.left .principal img{
-    width: 30px;
-}
+
 .nav-r .right{
     display: flex;
     height: 100%;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
 }
 
 .principal, .explorar, .suscripciones, .biblioteca{
@@ -120,5 +118,5 @@ body{
 }
 
 .mas{
-    padding-left: 28px;
+    width: 50px;
 }
