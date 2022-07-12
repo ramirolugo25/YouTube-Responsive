@@ -21,6 +21,9 @@ body{
 }
 
 /*Comienza el header*/
+.header-responsive{
+    display: none;
+}
 .header{
     grid-area: header;
     background-color: #212121;
@@ -136,7 +139,9 @@ body{
 
 
 /*Comienza el nav*/
-
+.nav-r{
+    display: none;
+}
 .nav{
     grid-area: nav;
     display: flex;
