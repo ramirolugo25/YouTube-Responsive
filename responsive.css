@@ -55,20 +55,34 @@ body{
     grid-template-rows: 298px;
     width: 100vw;
     max-width: 360px;
-    min-width: 200px;
+    min-width: 100%;
+
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    min-width: 100%;
+    gap: 15px;
 }
 
 .video iframe{
     width: 100vw;
-    max-width: 360px;
+    min-width: 100%;
+   
 }
 
 
 .pie-de-video{
     width: 100vw;
+    min-width: 100%;
     max-width: 249.2px;
     margin-left: 10px;
 }
+
 #ultimo-video .pie-de-video{
     margin-bottom: 65px;
 }
@@ -99,7 +113,7 @@ body{
     align-items: center;
 }
 .nav-r .left img, .nav-r .right img{
-    width: 30px;
+    width: 26px;
 }
 
 .nav-r .right{
@@ -118,5 +132,5 @@ body{
 }
 
 .mas{
-    width: 50px;
+    width: 35px;
 }
