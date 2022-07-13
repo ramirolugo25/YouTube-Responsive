@@ -1,30 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-areas: 
-    "header header"
-    "nav main";
+    grid-template-areas:
+        "header header"
+        "nav main";
     grid-template-rows: 59px;
-    grid-template-columns:240px ;
+    grid-template-columns: 240px;
     background-color: #181818;
 }
 
-/*Comienza el header*/
-.header-responsive{
+/*Ocultamos el header tamaño telefono*/
+.header-responsive {
     display: none;
 }
-.header{
+
+/*Comienza el header*/
+.header {
     grid-area: header;
     background-color: #212121;
     width: 100%;
@@ -32,10 +34,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:fixed;
+    position: fixed;
     z-index: 1;
 }
-.cabezera-izquierdo{
+
+.cabezera-izquierdo {
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -43,37 +46,44 @@ body{
     margin-left: 20px;
     gap: 20px;
 }
-.cabezera-izquierdo img{
+
+.cabezera-izquierdo img {
     width: 25px;
     height: auto;
 }
-.youtube a{
+
+.youtube a {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
     text-decoration: none;
-}   
-.youtube a img{
+}
+
+.youtube a img {
     width: 35px;
     height: 35px;
 }
-.youtube a h6{
+
+.youtube a h6 {
     font-family: 'Oswald', sans-serif;
     color: white;
     font-size: 2.2rem;
 }
-.cabezera-centro{
+
+.cabezera-centro {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.buscar{
+
+.buscar {
     display: flex;
 }
-.buscar input{
+
+.buscar input {
     background-color: hsl(0, 0%, 7%);
     color: white;
     width: 538px;
@@ -82,7 +92,8 @@ body{
     outline: none;
     outline-color: blue;
 }
-.lupa{
+
+.lupa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,11 +101,13 @@ body{
     height: 40px;
     background-color: hsl(0, 0%, 18.82%);
 }
-.lupa img{
+
+.lupa img {
     width: 20px;
     height: 20px;
 }
-.microfono{
+
+.microfono {
     width: 40px;
     height: 40px;
     display: flex;
@@ -103,7 +116,8 @@ body{
     background-color: hsl(0, 0%, 7%);
     border-radius: 100px;
 }
-.cabezera-derecho{
+
+.cabezera-derecho {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -111,12 +125,13 @@ body{
     margin-right: 20px;
     gap: 20px;
 }
-.cabezera-derecho .apps{
+
+.cabezera-derecho .apps {
     width: 30px;
     height: auto;
 }
-    
-.acceder{
+
+.acceder {
     width: 120px;
     height: 40px;
     display: flex;
@@ -125,24 +140,28 @@ body{
     border: 1px solid #3ea6ff;
     gap: 5px;
 }
-.acceder img{
+
+.acceder img {
     width: 20px;
     height: auto;
 }
-.acceder p{
+
+.acceder p {
     font-size: 1.3rem;
     color: #3ea6ff;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Termina el header*/
 
 
-/*Comienza el nav*/
-.nav-r{
+/*ocultamos el nav tamaño telefono*/
+.nav-r {
     display: none;
 }
-.nav{
+
+/*Comienza el nav*/
+.nav {
     grid-area: nav;
     display: flex;
     flex-direction: column;
@@ -155,10 +174,11 @@ body{
     overflow-y: scroll;
 }
 
-nav p{
+nav p {
     color: white;
 }
-.contenedores-lateral{
+
+.contenedores-lateral {
     margin-top: 15px;
     margin-left: 0px;
     display: flex;
@@ -166,31 +186,37 @@ nav p{
     align-items: center;
     width: 100%;
     flex-direction: column;
-    gap: 0px; /*agregado*/
+    gap: 0px;
+    /*agregado*/
 }
-.contenedores-lateral div{
+
+.contenedores-lateral div {
     display: flex;
     width: 100%;
-    height: 36px; /*agregado*/
+    height: 36px;
+    /*agregado*/
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
     padding-left: 20px;
 }
-.contenedores-lateral div:hover{
+
+.contenedores-lateral div:hover {
     background-color: rgba(126, 126, 126, 0.414);
 }
-.contenedores-lateral div img{
+
+.contenedores-lateral div img {
     width: 25px;
     height: auto;
 }
-.contenedores-lateral div p{
+
+.contenedores-lateral div p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.4rem;
 }
 
-.linea-separacion{
+.linea-separacion {
     height: 1px;
     width: 205px;
     background-color: gray;
@@ -199,17 +225,19 @@ nav p{
 }
 
 
-.acceder-lateral{
+.acceder-lateral {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 20px;
     gap: 10px;
 }
-.acceder-lateral p{
+
+.acceder-lateral p {
     font-size: 1.4rem;
 }
-.titulos-laterales{
+
+.titulos-laterales {
     font-size: 1.4rem;
     margin-left: 20px;
     margin-top: 15px;
@@ -217,7 +245,7 @@ nav p{
     color: #AAAAAA;
 }
 
-.contenedores-lateral-circulos{
+.contenedores-lateral-circulos {
     margin-top: 15px;
     margin-left: 0px;
     display: flex;
@@ -225,27 +253,33 @@ nav p{
     align-items: center;
     width: 100%;
     flex-direction: column;
-    gap: 0px;/*agregado*/
+    gap: 0px;
+    /*agregado*/
 }
-.contenedores-lateral-circulos div:hover{
-    background-color: rgba(126, 126, 126, 0.414);;
+
+.contenedores-lateral-circulos div:hover {
+    background-color: rgba(126, 126, 126, 0.414);
+    ;
 }
-.contenedores-lateral-circulos > div{
+
+.contenedores-lateral-circulos>div {
     display: flex;
     width: 100%;
-    height: 36px; 
+    height: 36px;
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
     padding-left: 20px;
 }
-.acceder-lateral p{
+
+.acceder-lateral p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
-    
+
 }
-.circulos{
+
+.circulos {
     width: 25px;
     height: 25px;
     background-color: rgba(85, 84, 84, 0.559);
@@ -254,17 +288,19 @@ nav p{
     align-items: center;
     border-radius: 100px;
 }
-.circulos img{
+
+.circulos img {
     width: 15px;
     height: auto;
 }
-.contenedores-lateral-circulos div p{
+
+.contenedores-lateral-circulos div p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.4rem;
 }
 
-.acerca-de{
+.acerca-de {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -272,14 +308,15 @@ nav p{
     padding-left: 24px;
     margin-top: 17px;
 }
-.acerca-de p{
+
+.acerca-de p {
     font-size: 1.3rem;
     color: #AAAAAA;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
-.copyright{
+.copyright {
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -289,10 +326,12 @@ nav p{
     padding-bottom: 15px;
     gap: 5px;
 }
-.copyright img{
+
+.copyright img {
     width: 12px;
 }
-.copyright p{
+
+.copyright p {
     color: #717171;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
@@ -302,7 +341,7 @@ nav p{
 
 /*Comienza el main*/
 
-.main{
+.main {
     grid-area: main;
     background-color: #181818;
     width: 100%;
@@ -311,7 +350,8 @@ nav p{
     margin-left: 245px; */
     overflow-x: hidden;
 }
-.contenedor-videos{
+
+.contenedor-videos {
     display: grid;
     grid-template-columns: 360px 360px 360px 360px;
     grid-template-rows: 298px 298px 298px 298px;
@@ -320,59 +360,66 @@ nav p{
     place-items: center;
     margin-top: 25px;
 }
-.video{
+
+.video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    
+    align-items: flex-start;
     gap: 15px;
 }
 
-.video iframe{
+.video iframe {
     width: 360px;
     height: 203px;
 }
-.video iframe:hover{
+
+.video iframe:hover {
     animation-name: expandir;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
 }
-.pie-de-video{
+
+.pie-de-video {
     display: flex;
     gap: 12px;
 }
 
-@keyframes expandir{
-    from{
+@keyframes expandir {
+    from {}
 
-    }
-    to{
+    to {
         width: 430px;
         height: 273px;
         z-index: 1;
     }
-} 
-.imagen-canal img{
+}
+
+.imagen-canal img {
     border-radius: 100px;
     width: 33px;
     height: auto;
 }
-.titulo-video{
+
+.titulo-video {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.titulo-video p{
+
+.titulo-video p {
     color: rgb(110, 110, 110);
     font-size: 1.3rem;
 }
-.titulo-video .titulo{
+
+.titulo-video .titulo {
     font-size: 1.4rem;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-.titulo-video div p{
+
+.titulo-video div p {
     font-size: 1.2rem;
     color: #AAAAAA;
     font-family: 'Roboto', sans-serif;
