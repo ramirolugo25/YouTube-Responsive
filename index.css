@@ -349,16 +349,22 @@ nav p {
     /* margin-top: 59px;
     margin-left: 245px; */
     overflow-x: hidden;
+    /* flex-wrap: wrap; */
 }
 
 .contenedor-videos {
-    display: grid;
-    grid-template-columns: 360px 360px 360px 360px;
-    grid-template-rows: 298px 298px 298px 298px;
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 360px 360px 360px 360px;
+    grid-template-rows: 298px 298px 298px 298px; */
     justify-content: center;
     gap: 20px;
     place-items: center;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    
 }
 
 .video {
